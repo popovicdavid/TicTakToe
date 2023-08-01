@@ -17,6 +17,9 @@ def player_move(board, player):
     if number <= 9 and number >=1 and board[number-1] == "-":
         board[number-1] = player
         print(printboard(board))
+    else:
+        print("that place is already taken!")
+        player_move(board, player)
 
 
 def check_horizontal(board):
