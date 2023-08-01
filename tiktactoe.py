@@ -16,7 +16,7 @@ def player_move(board, player):
     number = int(input("chose a number from 1 to 9: "))
     if number <= 9 and number >=1 and board[number-1] == "-":
         board[number-1] = player
-        print(printboard(board))
+        printboard(board)
     else:
         print("that place is already taken!")
         player_move(board, player)
